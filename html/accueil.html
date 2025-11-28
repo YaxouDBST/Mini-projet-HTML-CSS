@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil BUT Informatique</title>
+    <link rel="stylesheet" href="../css/accueil.css">
+    <meta name="description" content="Découvrez le BUT Informatique de l'IUT de Toulouse : formation, compétences, vie étudiante et débouchés professionnels sur le campus de Rangueil.">
+    <meta name="author" content="Étudiants IUT Toulouse">
+    <link rel="icon" type="image/png" href="../images/Logo_IUT.png">
+</head>
+<body>
+
+    <header>
+        <div class="header-content"> 
+            <input type="checkbox" id="menu-toggle">
+
+            <div class="header-top">
+                <div class="hlogo">
+                    <img id="logo1" src="../images/Logo_IUT.png" alt="Logo IUT Toulouse">
+                    <img id="logo2" src="../images/Logo_Univ.png" alt="Logo Université Toulouse">
+                    <img id="logo3" src="../images/but_illustration.png" alt="Logo BUT Informatique">
+                </div>
+            </div>
+            
+            <label for="menu-toggle" class="burger-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <nav class="barre">
+                <a class="link active" href="accueil.html">Accueil</a>
+                <a class="link" href="presentation.html">Présentation du BUT</a>
+                <div class="dropdown">
+                    <label for="competences">Sélectionnez une compétence :</label> 
+                    <select name="competences" id="competences" onchange="if(this.value)window.location.href=this.value;">
+                        <option value="" disabled selected>Choisir une compétence</option>
+                        <option value="competence1.html">Compétence 1</option>
+                        <option value="competence2.html">Compétence 2</option>
+                        <option value="competence3.html">Compétence 3</option>
+                        <option value="competence4.html">Compétence 4</option>
+                        <option value="competence5.html">Compétence 5</option>
+                        <option value="competence6.html">Compétence 6</option>
+                    </select>
+                </div>
+                <a class="link" href="contact.html">Contact</a> 
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section-article">
+            <div class="conteneur-flexible">
+                <div class="colonne-image">
+                    <img src="../images/but_illustration.png" alt="Illustration BUT" class="logo">
+                </div>
+                <div class="colonne-texte">
+                    <h1>Historique du BUT</h1>
+                    <p>Le Bachelor Universitaire de Technologie (BUT) est le nouveau diplôme de référence des IUT. Il fusionne le DUT et la licence professionnelle.</p>
+                    <p>Source : <a href="https://fr.wikipedia.org/wiki/Bachelor_universitaire_de_technologie" target="_blank">Wikipédia</a></p>
+                </div>
+            </div>
+        </section>
+
+        <div class="separateur"></div>
+
+        <section class="section-article">
+            <div class="conteneur-flexible">
+                <div class="colonne-image">
+                    <a href="https://www.iut-tlse3.fr/">
+                        <img src="../images/Photo_Batiment_IUT.png" alt="IUT Toulouse Rangueil" class="photo">
+                    </a>
+                </div>
+                <div class="colonne-texte">
+                    <h2>IUT Informatique Toulouse Rangueil</h2>
+                    <p>Le département informatique de l'IUT de Toulouse offre un cadre d'apprentissage idéal sur le campus de Rangueil, fort de son histoire et de ses équipements.</p>
+                    
+                    <h3>Contacts</h3>
+                    
+                    <h4>Direction</h4>
+                    <ul>
+                        <li><strong>Chef de dépt :</strong> Marie-Ange CASTILLON (05 62 25 82 46 - marie-ange.castillon@iut-tlse3.fr)</li>
+                        <li><strong>Adjoints :</strong> Arnaud FOUCHER, Jean-Thierry JULIA, Mariane POULANGES, Elyes CHAOUCH</li>
+                    </ul>
+
+                    <h4>Secrétariat</h4>
+                    <ul>
+                        <li><strong>Dépt & Pédagogique :</strong> Karine LETALLE (05 62 25 81 75 - karine.letalle@iut-tlse3.fr)</li>
+                        <li><strong>Pédagogique :</strong> Régine HOT (BC93 - 05 62 25 81 76 - regine.hot@iut-tlse3.fr)</li>
+                    </ul>
+
+                    <h4>Formations</h4>
+                    <ul>
+                        <li><strong>Parcours Info Num. :</strong> Arnaud FOUCHER</li>
+                        <li><strong>Parcours Com. :</strong> Monica ALAEZ-GALAN</li>
+                        <li><strong>Parcours Patrimoine :</strong> Jean-Thierry JULIA</li>
+                        <li><strong>L3 Info-Com :</strong> Nikolaos SMYRNAIOS, Caroline COURBIERES</li>
+                        <li><strong>Master Com & Territoires :</strong> Brigitte SEBBAH (05 62 25 81 77), Franck BOUSQUET (05 62 25 81 74)</li>
+                    </ul>
+
+                    <h4>Stages</h4>
+                    <ul>
+                        <li><strong>Info Num. :</strong> Marie Gabrielle SURAUD</li>
+                        <li><strong>Com. :</strong> Monica ALAEZ-GALAN</li>
+                        <li><strong>Patrimoine :</strong> Emmanuelle LAMBERT</li>
+                        <li><strong>Master 2 :</strong> Brigitte SEBBAH</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="separateur"></div>
+
+        <section class="section-article">
+            <h2>Liste des compétences</h2>
+            <div class="grille-competences">
+                <div class="bloc-competence">
+                    <a href="competence.html">
+                        <img src="../images/Competence1.png" alt="Compétence 1 : Réaliser un développement d'application">
+                        <h3>C1 : Réaliser</h3>
+                        <p>Réaliser un développement d'application</p>
+                    </a>
+                </div>
+                <div class="bloc-competence">
+                    <a href="competence2.html">
+                        <img src="../images/Competence2.png" alt="Compétence 2 : Optimiser des applications">
+                        <h3>C2 : Optimiser</h3>
+                        <p>Optimiser des applications</p>
+                    </a>
+                </div>
+                <div class="bloc-competence">
+                    <a href="competence3.html">
+                        <img src="../images/Competence3.png" alt="Compétence 3 : Administrer des systèmes informatiques">
+                        <h3>C3 : Administrer</h3>
+                        <p>Administrer des systèmes informatiques</p>
+                    </a>
+                </div>
+                <div class="bloc-competence">
+                    <a href="competence4.html">
+                        <img src="../images/Competence4.png" alt="Compétence 4 : Gérer des données de l'information">
+                        <h3>C4 : Gérer</h3>
+                        <p>Gérer des données de l'information</p>
+                    </a>
+                </div>
+                <div class="bloc-competence">
+                    <a href="competence5.html">
+                        <img src="../images/Competence5.png" alt="Compétence 5 : Conduire un projet">
+                        <h3>C5 : Conduire</h3>
+                        <p>Conduire un projet</p>
+                    </a>
+                </div>
+                <div class="bloc-competence">
+                    <a href="competence6.html">
+                        <img src="../images/Competence6.png" alt="Compétence 6 : Collaborer au sein d'une équipe">
+                        <h3>C6 : Collaborer</h3>
+                        <p>Collaborer au sein d'une équipe</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <div class="separateur"></div>
+
+        <section class="section-article">
+            <div class="conteneur-flexible">
+                <div class="colonne-texte">
+                    <h2>Vie étudiante</h2>
+                    <p>La vie sur le campus est dynamique. Les étudiants profitent de nombreuses infrastructures sportives et culturelles.</p>
+                </div>
+                <div class="colonne-image">
+                    <a href="https://www.crous-toulouse.fr/">
+                        <img src="../images/vie-etudiante.jpg" alt="Infos Restauration et Sport" class="photo">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+       <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2 class="footer-logo">IUT Toulouse</h2>
+                <p>Département Informatique.<br>Formation BUT de qualité sur le campus de Rangueil.</p>
+                    <div class="contact-links">
+                        <a href="tel:+33562258000"><i class="fas fa-phone"></i> +33 5 62 25 80 00</a>
+                        <a href="#" target="_blank"><i class="fas fa-map-marker-alt"></i> 133b Av. de Rangueil</a>
+                    </div>
+            </div>
+            <div class="footer-section links">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="accueil.html">Accueil</a></li>
+                    <li><a href="presentation.html">Présentation du BUT</a></li>
+                    <li><a href="#">Nos Compétences</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section credits">
+                <h3>Réalisé par</h3>
+                <ul class="student-list">
+                    <li>Yanis Bellameche</li>
+                    <li>Luka Chabot</li>
+                    <li>Yanis Gesse</li>
+                    <li>Dorian Lefranc</li>
+                    <li>Kevan Sopena-Gheis</li>
+                </ul>
+            </div>
+            <div class="footer-section legal">
+                <h3>Informations Légales</h3>
+                <ul>
+                    <li><a href="#">Mentions Légales</a></li>
+                    <li><a href="#">Politique de Confidentialité</a></li>
+                </ul>
+                <a href="https://www.cnil.fr" target="_blank" class="cnil-btn">
+                <i class="fas fa-user-shield"></i> Conformité RGPD
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 IUT Toulouse - BUT Informatique. Tous droits réservés.</p>
+        </div>
+    </footer> 
+
+</body>
+</html>

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suivi Pédagogique - BUT Informatique</title>
+    <link rel="stylesheet" href="../css/presentation.css">
+    <meta name="description" content="Tableau de bord pédagogique du BUT Informatique : règles de validation, suivi des compétences (Réaliser, Optimiser, Administrer...) et liste des ressources.">
+    <meta name="author" content="Étudiants IUT Toulouse">
+    <link rel="icon" type="image/png" href="../images/Logo_IUT.png">
+</head>
+<body>
+
+    <header>
+        <div class="header-content"> 
+            <input type="checkbox" id="menu-toggle">
+
+            <div class="header-top">
+                <div class="logo">
+                    <img id="logo1" src="../images/Logo_IUT.png" alt="Logo IUT Toulouse">
+                    <img id="logo2" src="../images/Logo_Univ.png" alt="Logo Université Toulouse">
+                    <img id="logo3" src="../images/but_illustration.png" alt="Logo BUT Informatique">
+                </div>
+            </div>
+            
+            <label for="menu-toggle" class="burger-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <nav class="barre">
+                <a class="link active" href="accueil.html">Accueil</a>
+                <a class="link" href="presentation.html">Présentation du BUT</a>
+                <div class="dropdown">
+                    <label for="competences">Sélectionnez une compétence :</label> 
+                    <select name="competences" id="competences" onchange="if(this.value)window.location.href=this.value;">
+                        <option value="" disabled selected>Choisir une compétence</option>
+                        <option value="competence1.html">Compétence 1</option>
+                        <option value="competence2.html">Compétence 2</option>
+                        <option value="competence3.html">Compétence 3</option>
+                        <option value="competence4.html">Compétence 4</option>
+                        <option value="competence5.html">Compétence 5</option>
+                        <option value="competence6.html">Compétence 6</option>
+                    </select>
+                </div>
+                <a class="link" href="contact.html">Contact</a> 
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-container">
+        
+        <section class="suivi-section card-box">
+            <h1 class="section-title">Tableau de Bord - Semestre 1</h1>
+            
+            <div class="suivi-content">
+                <div class="suivi-info">
+                    <h3>Règles de validation</h3>
+                    <p>Pour valider le semestre, il est impératif d'obtenir une moyenne générale supérieure à <strong>10/20</strong>.</p>
+                    <p>Aucune moyenne d'Unité d'Enseignement (UE) ne doit être inférieure à <strong>8/20</strong>.</p>
+                    <p>L'assiduité aux cours est une condition nécessaire à la validation.</p>
+                </div>
+
+                <div class="suivi-table-container">
+                    <table class="suivi-table">
+                        <thead>
+                            <tr>
+                                <th>Ress</th>
+                                <th>C1</th>
+                                <th>C2</th>
+                                <th>C3</th>
+                                <th>C4</th>
+                                <th>C5</th>
+                                <th>C6</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>R1.01</strong></td>
+                                <td class="valid">12</td>
+                                <td>-</td>
+                                <td class="warn">8.5</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td><strong>R1.02</strong></td>
+                                <td>-</td>
+                                <td class="valid">14</td>
+                                <td>-</td>
+                                <td class="valid">11</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td><strong>R1.03</strong></td>
+                                <td class="danger">5</td>
+                                <td class="danger">5</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <section class="competences-list">
+
+            <article class="comp-block left-visual">
+                <div class="comp-visual c-bg">
+                    <h3>C1 - Réaliser</h3>
+                    <p>Développer des applications informatiques simples.</p>
+                    <a href="competence.html" class="btn-details">Détails</a>
+                </div>
+                <div class="comp-resources-grid">
+                    <div class="res-item">
+                        <span class="res-code">R1.01</span>
+                        <span class="res-name">Initiation Dév.</span>
+                    </div>
+                    <div class="res-item">
+                        <span class="res-code">R1.02</span>
+                        <span class="res-name">Interface Web</span>
+                    </div>
+                    <div class="res-item">
+                        <span class="res-code">R2.01</span>
+                        <span class="res-name">Dév. Objets</span>
+                    </div>
+                    <div class="res-item empty"></div>
+                    <div class="res-item empty"></div>
+                    <div class="res-item empty"></div>
+                </div>
+            </article>
+
+            <article class="comp-block right-visual">
+                <div class="comp-visual c-bg">
+                    <h3>C2 - Optimiser</h3>
+                    <p>Appréhender et construire des algorithmes.</p>
+                    <a href="competence2.html" class="btn-details">Détails</a>
+                </div>
+                <div class="comp-resources-grid">
+                    <div class="res-item">
+                        <span class="res-code">R1.01</span>
+                        <span class="res-name">Algo Fond.</span>
+                    </div>
+                    <div class="res-item">
+                        <span class="res-code">R1.07</span>
+                        <span class="res-name">Maths Fond.</span>
+                    </div>
+                    <div class="res-item">
+                        <span class="res-code">R2.07</span>
+                        <span class="res-name">Graphes</span>
+                    </div>
+                    <div class="res-item empty"></div>
+                    <div class="res-item empty"></div>
+                    <div class="res-item empty"></div>
+                </div>
+            </article>
+
+            <article class="comp-block left-visual">
+                <div class="comp-visual c-bg">
+                    <h3>C3 - Administrer</h3>
+                    <p>Installer et configurer un poste de travail.</p>
+                    <a href="competence3.html" class="btn-details">Détails</a>
+                </div>
+                <div class="comp-resources-grid">
+                    <div class="res-item">
+                        <span class="res-code">R1.03</span>
+                        <span class="res-name">Archi</span>
+                    </div>
+                    <div class="res-item">
+                        <span class="res-code">R1.04</span>
+                        <span class="res-name">Systèmes</span>
+                    </div>
+                    <div class="res-item">
+                        <span class="res-code">R2.04</span>
+                        <span class="res-name">Réseaux</span>
+                    </div>
+                    <div class="res-item empty"></div>
+                    <div class="res-item empty"></div>
+                    <div class="res-item empty"></div>
+                </div>
+            </article>
+
+            <article class="comp-block right-visual">
+                <div class="comp-visual c-bg">
+                    <h3>C4 - Gérer</h3>
+                    <p>Concevoir et mettre en place une base de données.</p>
+                    <a href="competence4.html" class="btn-details">Détails</a>
+                </div>
+                <div class="comp-resources-grid">
+                    <div class="res-item">
+                        <span class="res-code">R1.05</span>
+                        <span class="res-name">Bases de Données</span>
+                    </div>
+                    <div class="res-item">
+                        <span class="res-code">R1.06</span>
+                        <span class="res-name">Maths Discrètes</span>
+                    </div>
+                    <div class="res-item">
+                        <span class="res-code">R2.06</span>
+                        <span class="res-name">Exploitation BD</span>
+                    </div>
+                    <div class="res-item empty"></div>
+                    <div class="res-item empty"></div>
+                    <div class="res-item empty"></div>
+                </div>
+            </article>
+
+            <article class="comp-block left-visual">
+                <div class="comp-visual c-bg">
+                    <h3>C5 - Conduire</h3>
+                    <p>Identifier les besoins métiers des clients et utilisateurs.</p>
+                    <a href="competence5.html" class="btn-details">Détails</a>
+                </div>
+                <div class="comp-resources-grid">
+                    <div class="res-item">
+                        <span class="res-code">R1.08</span>
+                        <span class="res-name">Organisations</span>
+                    </div>
+                    <div class="res-item">
+                        <span class="res-code">R1.11</span>
+                        <span class="res-name">Communication</span>
+                    </div>
+                    <div class="res-item">
+                        <span class="res-code">R2.10</span>
+                        <span class="res-name">Gestion Projet</span>
+                    </div>
+                    <div class="res-item empty"></div>
+                    <div class="res-item empty"></div>
+                    <div class="res-item empty"></div>
+                </div>
+            </article>
+
+            <article class="comp-block right-visual">
+                <div class="comp-visual c-bg">
+                    <h3>C6 - Collaborer</h3>
+                    <p>Identifier ses aptitudes pour travailler dans une équipe.</p>
+                    <a href="competence6.html" class="btn-details">Détails</a>
+                </div>
+                <div class="comp-resources-grid">
+                    <div class="res-item">
+                        <span class="res-code">R1.09</span>
+                        <span class="res-name">Éco Durable</span>
+                    </div>
+                    <div class="res-item">
+                        <span class="res-code">R1.12</span>
+                        <span class="res-name">Projet Perso (PPP)</span>
+                    </div>
+                    <div class="res-item">
+                        <span class="res-code">R2.13</span>
+                        <span class="res-name">Com Technique</span>
+                    </div>
+                    <div class="res-item empty"></div>
+                    <div class="res-item empty"></div>
+                    <div class="res-item empty"></div>
+                </div>
+            </article>
+
+        </section>
+
+    </main>
+    
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2 class="footer-logo">IUT Toulouse</h2>
+                <p>Département Informatique.<br>Formation BUT de qualité sur le campus de Rangueil.</p>
+                    <div class="contact-links">
+                        <a href="tel:+33562258000"><i class="fas fa-phone"></i> +33 5 62 25 80 00</a>
+                        <a href="#" target="_blank"><i class="fas fa-map-marker-alt"></i> 133b Av. de Rangueil</a>
+                    </div>
+            </div>
+            <div class="footer-section links">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="accueil.html">Accueil</a></li>
+                    <li><a href="presentation.html">Présentation du BUT</a></li>
+                    <li><a href="#">Nos Compétences</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section credits">
+                <h3>Réalisé par</h3>
+                <ul class="student-list">
+                    <li>Yanis Bellameche</li>
+                    <li>Luka Chabot</li>
+                    <li>Yanis Gesse</li>
+                    <li>Dorian Lefranc</li>
+                    <li>Kevan Sopena-Gheis</li>
+                </ul>
+            </div>
+            <div class="footer-section legal">
+                <h3>Informations Légales</h3>
+                <ul>
+                    <li><a href="#">Mentions Légales</a></li>
+                    <li><a href="#">Politique de Confidentialité</a></li>
+                </ul>
+                <a href="https://www.cnil.fr" target="_blank" class="cnil-btn">
+                <i class="fas fa-user-shield"></i> Conformité RGPD
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 IUT Toulouse - BUT Informatique. Tous droits réservés.</p>
+        </div>
+    </footer> 
+</body>
+</html>

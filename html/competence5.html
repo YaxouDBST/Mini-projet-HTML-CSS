@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compétence 5 : Conduire un projet</title>
+    <link rel="stylesheet" href="../css/competence.css">
+    <meta name="description" content="Détails de la Compétence 5 (Conduire un projet) du BUT Informatique : Apprentissages critiques, SAÉ associées et coefficients d'évaluation.">
+    <meta name="author" content="Étudiants IUT Toulouse">
+    <link rel="icon" type="image/png" href="../images/Logo_IUT.png">
+</head>
+<body class="c5" id="top">
+
+    <header>
+        <div class="header-content"> 
+            <input type="checkbox" id="menu-toggle">
+
+            <div class="header-top">
+                <div class="logo">
+                    <img id="logo1" src="../images/Logo_IUT.png" alt="Logo IUT Toulouse">
+                    <img id="logo2" src="../images/Logo_Univ.png" alt="Logo Université Toulouse">
+                    <img id="logo3" src="../images/but_illustration.png" alt="Logo BUT Informatique">
+                </div>
+            </div>
+            
+            <label for="menu-toggle" class="burger-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <nav class="barre">
+                <a class="link" href="accueil.html">Accueil</a>
+                <a class="link" href="presentation.html">Présentation du BUT</a>
+                <div class="dropdown">
+                    <label for="competences">Sélectionnez une compétence :</label> 
+                    <select name="competences" id="competences" onchange="if(this.value)window.location.href=this.value;">
+                        <option value="" disabled selected>Choisir une compétence</option>
+                        <option value="competence1.html">Compétence 1</option>
+                        <option value="competence2.html">Compétence 2</option>
+                        <option value="competence3.html">Compétence 3</option>
+                        <option value="competence4.html">Compétence 4</option>
+                        <option value="competence5.html">Compétence 5</option>
+                        <option value="competence6.html">Compétence 6</option>
+                    </select>
+                </div>
+                <a class="link" href="contact.html">Contact</a> 
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1 class="page-title">Compétence 5 : Conduire un projet</h1>
+
+        <div class="part">
+            <h2>Apprentissages Critiques (Niveau 1)</h2>
+            <div class="content-split">
+                <div class="ac-image-box">
+                    <img src="../images/Competence5.png" alt="Schéma C5" class="competence-image">
+                </div>
+                <div class="ac-list-box">
+                    <h3>Identifier les besoins métiers des clients et des utilisateurs</h3>
+                    <ul>
+                        <li><b>AC 1 :</b> Appréhender les besoins du client et de l'utilisateur. </li>
+                        <li><b>AC 2 :</b> Mettre en place les outils de gestion de projet. </li>
+                        <li><b>AC 3 :</b> Identifier les acteurs et les différentes phases d'un cycle de développement. </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <hr class="decorator">
+
+        <div class="part">
+            <h2>Évaluation et Coefficients (Niveau 1)</h2>
+            <div style="overflow-x:auto;">
+                <table class="evaluation-table">
+                    <thead>
+                        <tr>
+                            <th>Module</th>
+                            <th>Intitulé</th>
+                            <th>Semestre</th>
+                            <th>Coeff. Global</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>UE 1.5</strong></td>
+                            <td>Gestion de projet (S1)</td>
+                            <td>S1</td>
+                            <td>40% SAÉ / 60% Ress.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>UE 2.5</strong></td>
+                            <td>Gestion de projet (S2)</td>
+                            <td>S2</td>
+                            <td>40% SAÉ / 60% Ress.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <hr class="decorator">
+
+        <div class="part">
+            <h2>Situation d'Apprentissage et d'Évaluation (SAÉ)</h2>
+            <div class="sae-box">
+                <h3>SAÉ 1.05 : Recueil de besoins</h3>
+                <p><strong>Problématique professionnelle :</strong> Conduite de projet à partir d'un besoin client. Approche du dialogue continu pour affiner les attentes.</p>
+                <p><strong>Description :</strong> Formaliser les attentes liées à un projet (questionnaire, maquettes, scénarios) dans un contexte professionnel.</p>
+            </div>
+        </div>
+
+        <hr class="decorator">
+
+        <div class="part">
+            <h2>Ressources associées (Programme)</h2>
+            
+            <div class="resource-box">
+                <p class="resource-title"><span class="code">R1.08</span> Intro. Gestion des organisations</p>
+                <p class="resource-acs">Lié aux AC : AC1</p>
+                <p class="resource-desc">Fonctionnement des organisations, acteurs, stratégie et enjeux de la transformation numérique.</p>
+            </div>
+
+            <div class="resource-box">
+                <p class="resource-title"><span class="code">R1.11</span> Bases de la communication</p>
+                <p class="resource-acs">Lié aux AC : AC1, AC3</p>
+                <p class="resource-desc">Techniques d'interview, recueil de besoins, écoute active et conception de documents de communication.</p>
+            </div>
+
+            <div class="resource-box">
+                <p class="resource-title"><span class="code">R2.10</span> Gestion des SI (S2)</p>
+                <p class="resource-acs">Lié aux AC : Tous</p>
+                <p class="resource-desc">Fondements de la gestion de projet informatique : acteurs, cycle de vie, planification (Gantt) et coûts.</p>
+            </div>
+
+        </div> 
+
+        <div class="back-to-top">
+            <a href="#top">▲ Revenir en haut</a>
+        </div>
+    </div>
+
+
+        <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2 class="footer-logo">IUT Toulouse</h2>
+                <p>Département Informatique.<br>Formation BUT de qualité sur le campus de Rangueil.</p>
+                    <div class="contact-links">
+                        <a href="tel:+33562258000"><i class="fas fa-phone"></i> +33 5 62 25 80 00</a>
+                        <a href="#" target="_blank"><i class="fas fa-map-marker-alt"></i> 133b Av. de Rangueil</a>
+                    </div>
+            </div>
+            <div class="footer-section links">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="accueil.html">Accueil</a></li>
+                    <li><a href="presentation.html">Présentation du BUT</a></li>
+                    <li><a href="#">Nos Compétences</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section credits">
+                <h3>Réalisé par</h3>
+                <ul class="student-list">
+                    <li>Yanis Bellameche</li>
+                    <li>Luka Chabot</li>
+                    <li>Yanis Gesse</li>
+                    <li>Dorian Lefranc</li>
+                    <li>Kevan Sopena-Gheis</li>
+                </ul>
+            </div>
+            <div class="footer-section legal">
+                <h3>Informations Légales</h3>
+                <ul>
+                    <li><a href="#">Mentions Légales</a></li>
+                    <li><a href="#">Politique de Confidentialité</a></li>
+                </ul>
+                <a href="https://www.cnil.fr" target="_blank" class="cnil-btn">
+                <i class="fas fa-user-shield"></i> Conformité RGPD
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 IUT Toulouse - BUT Informatique. Tous droits réservés.</p>
+        </div>
+    </footer> 
+</body>
+</html>
